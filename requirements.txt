@@ -1,0 +1,4 @@
+pymupdf>=1.24
+ipykernel
+chromadb
+sentence-transformers

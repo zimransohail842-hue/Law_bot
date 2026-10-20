@@ -1,0 +1,22 @@
+requirements.txt
+pymupdf>=1.24
+ipykernel
+
+
+Virtual env setup (Codespaces terminal)
+bash
+# from your project folder
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# register it so the notebook can use it
+python -m ipykernel install --user --name constitution-rag --display-name "constitution-rag"
+
+# keep it out of git
+echo ".venv/" >> .gitignore
+
+
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
